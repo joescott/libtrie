@@ -1,9 +1,9 @@
 
-TEST=stm_test
+TEST=trie_test
 
-INCLUDES= -I. -I../ -I../dlinkedlist
-CFLAGS= -MD -g -Wall -DNDEBUG
-LDFLAGS= -L. -L../ -lstm
+INCLUDES= -I. -I../ 
+CFLAGS= -MD -g -Wall -DDEBUG
+LDFLAGS= -L. -L../ -ltrie
 
 .PHONY: all clean 
 

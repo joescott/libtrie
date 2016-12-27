@@ -5,7 +5,7 @@ INCLUDES= -I.
 CFLAGS= -MD -g -Wall -DNDEBUG
 LDFLAGS= -L.
 
-.PHONY: all clean
+.PHONY: all clean test
 
 OBJS_ALL=$(patsubst %.c,%.o,$(wildcard *.c))
 OBJS_LIBS:=$(filter-out main.o,$(OBJS_ALL))
