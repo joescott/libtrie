@@ -65,6 +65,7 @@ TRIE_NODE_ST* trieSearch(TRIE_NODE_ST *root, const TRIE_NODE_KEY_T *key)
 void trieAdd(TRIE_NODE_ST **root, TRIE_NODE_KEY_T *key, TRIE_NODE_VALUE_T value)
 {
     TRIE_NODE_ST *node;
+
     if(*root == NULL)
         return;
 
@@ -89,7 +90,6 @@ void trieAdd(TRIE_NODE_ST **root, TRIE_NODE_KEY_T *key, TRIE_NODE_VALUE_T value)
         printf("Duplicate!\n");
         return;
     }
-
 
     while(*key != '\0')
     {
